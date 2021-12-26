@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.wrapper {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: rotate 2.5s linear infinite;
+}
+
+/* ==== Animation 1 ====  */
+.circle1 {
+  box-shadow: 0px 5px 5px 3px #0496ff, 0px -5px 5px 3px #ff0000,
+    -5px 0px 5px 3px #a1ff0a, 5px 0px 5px 3px #f8ffe5;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
